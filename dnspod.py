@@ -15,7 +15,7 @@ params = dict(
     record_line="默认",
 )
 current_ip = socket.gethostbyname('www.example.com')
-print time.strftime('%Y-%m-%d %A %X %Z',time.localtime(time.time()))+"  www.example.com:"current_ip
+print time.strftime('%Y-%m-%d %A %X %Z',time.localtime(time.time()))+"  www.example.com:"+current_ip
 
 def ddns(ip):
     params.update(dict(value=ip))
